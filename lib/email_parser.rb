@@ -15,8 +15,8 @@ class EmailParser
 
   def parse
     array = @emails.split(" ")
-    (array.map { |e| e.split(",")}).flatten
-    binding.pry
+    list = (array.map { |e| e.split(",")}).flatten
+    list.uniq
   end
 
 end
