@@ -15,6 +15,7 @@ class EmailParser
 
   def parse
     @emails.split(" ")
+    @emails.map { |e| e.split(",")}
     binding.pry
   end
 
